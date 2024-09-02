@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso - Biblioteca Dr. Joaquim Suassuna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FDE9E9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .notice-box {
+            background-color: #FFCCCC;
+            border: 2px solid #CC0000;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .notice-box h1 {
+            color: #CC0000;
+            margin-bottom: 10px;
+        }
+        .notice-box p {
+            font-size: 18px;
+        }
+        span{
+            font-weight: bold;
+        }
+        .notice-box button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #CC0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .notice-box button:hover {
+            background-color: #990000;
+        }
+    </style>
+</head>
+<body>
+    <div class="notice-box">
+        <h1>Aviso!</h1>
+        <p> 
+            O Lab Livre encerrou. <br>
+            <span>Jogos</span> não são permitidos neste horário.
+        </p>
+        <button onclick="window.close()">Entendi</button>
+    </div>
+</body>
+</html>
