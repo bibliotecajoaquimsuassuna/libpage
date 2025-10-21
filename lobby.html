@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby de Avisos - Biblioteca Dr. Joaquim Suassuna</title>
+    <style>
+        /* ======= ESTILO GERAL ======= */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(160deg, #1576BD 0%, #5FAEE3 100%);
+            margin: 0;
+            padding: 0;
+            color: #1A1A1A;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            background-color: rgba(21, 118, 189, 0.9);
+            color: #FFFFFF;
+            padding: 30px 10px;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        main {
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
+        }
+
+        /* ======= BOTÕES ======= */
+        a.button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            padding: 25px;
+            border-radius: 18px;
+            font-size: 1.25em;
+            font-weight: 600;
+            width: 360px;
+            height: 90px;
+            text-align: center;
+            transition: all 0.25s ease-in-out;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+        }
+
+        a.button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+        }
+
+        /* ======= CORES ======= */
+        .gray { background-color: #4B5563; }
+        .gray:hover { background-color: #374151; }
+
+        .blue { background-color: #1576BD; }
+        .blue:hover { background-color: #125F96; }
+
+        .orange { background-color: #E66E2B; }
+        .orange:hover { background-color: #C75A1E; }
+
+        .red { background-color: #CC0000; }
+        .red:hover { background-color: #A50000; }
+
+        .yellow { background-color: #F2B300; color: #333; }
+        .yellow:hover { background-color: #D89E00; color: white; }
+
+        .green { background-color: #3BA55D; }
+        .green:hover { background-color: #2D874A; }
+
+        /* ======= RODAPÉ ======= */
+        footer {
+            margin-top: auto;
+            color: #FFFFFF;
+            background-color: rgba(0,0,0,0.8);
+            font-size: 1em;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* ======= RESPONSIVIDADE ======= */
+        @media (max-width: 600px) {
+            a.button {
+                width: 90%;
+                height: auto;
+                padding: 22px;
+                font-size: 1.1em;
+            }
+
+            header {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>🎮 Lobby de Avisos e Regras</header>
+
+<main>
+    <a href="silenceplease.html" class="button gray">🤫 Evite barulho e palavrões</a>
+    <a href="usephones.html" class="button blue">🎧 Use fones de ouvido</a>
+    <a href="warning.html" class="button yellow">⚠️ Encerraremos em breve</a>
+    <a href="jogos.html" class="button orange">🕕 Jogos encerram às 18h</a>
+    <a href="nogames.html" class="button red">⏰ Horário de jogos encerrado</a>
+    <a href="noviolence.html" class="button red">🚫 Proibido jogos violentos (FPS)</a>
+    <a href="notice.html" class="button green">📢 Aviso de início de curso</a>
+    <a href="termosdeparticipacao.html" class="button blue">📜 Nossas Políticas</a>
+</main>
+
+<footer>
+    Biblioteca Dr. Joaquim Suassuna — Recife 📚
+</footer>
+
+</body>
+</html>
