@@ -3,126 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-vindo(a) à Biblioteca Dr. Joaquim Suassuna</title>
+    <title>Lobby de Avisos - Biblioteca Dr. Joaquim Suassuna</title>
     <style>
+        /* ======= ESTILO GERAL ======= */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(160deg, #1576BD 0%, #5FAEE3 100%);
             margin: 0;
-            padding: 20px;
-            color: #333;
-        }
-        header {
-            background-color: #1576bd;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1{
-            color: #f4f4f4;
-        }
-        h2, h3 {
-            color: #1576bd;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style: none;
             padding: 0;
-        }
-        ul li {
-            background: #f4f4f4;
-            margin: 5px 0;
-            padding: 10px;
-            border-left: 5px solid #1576bd;
-        }
-        .activities {
+            color: #1A1A1A;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
-        .activities > div {
-            width: 48%;
-        }
-        .contact {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #1576bd;
-            color: white;
+
+        header {
+            width: 100%;
+            background-color: rgba(21, 118, 189, 0.9);
+            color: #FFFFFF;
+            padding: 30px 10px;
+            font-size: 2em;
+            font-weight: bold;
             text-align: center;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
+
+        main {
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
+        }
+
+        /* ======= BOTÕES ======= */
+        a.button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            padding: 25px;
+            border-radius: 18px;
+            font-size: 1.25em;
+            font-weight: 600;
+            width: 360px;
+            height: 90px;
+            text-align: center;
+            transition: all 0.25s ease-in-out;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+        }
+
+        a.button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+        }
+
+        /* ======= CORES ======= */
+        .gray { background-color: #4B5563; }
+        .gray:hover { background-color: #374151; }
+
+        .blue { background-color: #1576BD; }
+        .blue:hover { background-color: #125F96; }
+
+        .orange { background-color: #E66E2B; }
+        .orange:hover { background-color: #C75A1E; }
+
+        .red { background-color: #CC0000; }
+        .red:hover { background-color: #A50000; }
+
+        .yellow { background-color: #F2B300; color: #333; }
+        .yellow:hover { background-color: #D89E00; color: white; }
+
+        .green { background-color: #3BA55D; }
+        .green:hover { background-color: #2D874A; }
+
+        /* ======= RODAPÉ ======= */
         footer {
+            margin-top: auto;
+            color: #FFFFFF;
+            background-color: rgba(0,0,0,0.8);
+            font-size: 1em;
+            padding: 20px;
             text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
+            width: 100%;
+        }
+
+        /* ======= RESPONSIVIDADE ======= */
+        @media (max-width: 600px) {
+            a.button {
+                width: 90%;
+                height: auto;
+                padding: 22px;
+                font-size: 1.1em;
+            }
+
+            header {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo à Biblioteca Dr. Joaquim Suassuna!</h1>
-    </header>
-    <main>
-        <section class="section">
-            <h2>Quem somos?</h2>
-            <p>A Biblioteca Dr. Joaquim Suassuna é um espaço dedicado ao aprendizado, cultura e inclusão digital. Nosso objetivo é oferecer um ambiente acolhedor e estimulante para todos, proporcionando acesso a recursos educacionais, culturais e lazer.</p>
-        </section>
-        <section class="section">
-            <h2>Horário de Funcionamento</h2>
-            <p>Segunda a Sexta: 9h às 21h<br>Sábado e Domingo: 8h às 12h</p>
-        </section>
-        <section class="section">
-            <h2>Atividades Ofertadas</h2>
-            <div class="activities">
-                <div>
-                    <h3>Atividades com Inscrição:</h3>
-                    <ul>
-                        <li>Cursos de informática</li>
-                        <li>Programação e arte digital</li>
-                        <li>Atividades pedagógicas</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Atividades sem Inscrição:</h3>
-                    <ul>
-                        <li>Acesso livre aos computadores e internet</li>
-                        <li>Espaços de leitura e estudo</li>
-                        <li>Jogos e brincadeiras</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <h2>Regras de Utilização</h2>
-            <ul>
-                <li>O uso dos computadores só é permitido mediante cadastro e liberação na recepção.</li>
-                <li>Utilize fones de ouvido para consumir qualquer mídia.</li>
-                <li>Ao terminar de usar o espaço, deixe-o organizado, arrume a cadeira, o monitor, teclado e mouse.</li>
-                <li>Não é permitido o consumo de alimentos dentro da biblioteca.</li>
-                <li>Mantenha-se hidratado(a), traga sua garrafa.</li>
-                <li>Seja respeitoso(a) e colaborativo(a) com todos os usuários e a equipe da biblioteca.</li>
-            </ul>
-        </section>
-        <section class="section contact">
-            <h2>Contatos</h2>
-            <p>
-                Biblioteca Dr. Joaquim Suassuna<br>
-                Rua Manoel de Brito n°192 - Pina, Recife - PE<br>
-                Contato: (81) 99488-6478 | <a href="https://www.instagram.com/bibliotecaspelapaz">@bibliotecaspelapaz</a>
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Biblioteca Dr. Joaquim Suassuna. Todos os direitos reservados.</p>
-    </footer>
+
+<header>🎮 Lobby de Avisos e Regras</header>
+
+<main>
+    <a href="silenceplease.html" class="button gray">🤫 Evite barulho e palavrões</a>
+    <a href="usephones.html" class="button blue">🎧 Use fones de ouvido</a>
+    <a href="warning.html" class="button yellow">⚠️ Encerraremos em breve</a>
+    <a href="jogos.html" class="button orange">🕕 Jogos encerram às 18h</a>
+    <a href="nogames.html" class="button red">⏰ Horário de jogos encerrado</a>
+    <a href="noviolence.html" class="button red">🚫 Proibido jogos violentos (FPS)</a>
+    <a href="notice.html" class="button green">📢 Aviso de início de curso</a>
+    <a href="termosdeparticipacao.html" class="button blue">📜 Nossas Políticas</a>
+</main>
+
+<footer>
+    Biblioteca Dr. Joaquim Suassuna — Recife 📚
+</footer>
+
 </body>
 </html>
