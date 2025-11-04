@@ -3,62 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerta - Biblioteca Dr. Joaquim Suassuna</title>
+    <title>Use Fones de Ouvido</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
             margin: 0;
-            padding: 0;
+            font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #ffffff);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            color: #333;
-        }
-        .alert-box {
-            background-color: #FFE6CC;
-            border: 2px solid #FF6600;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 500px;
-            width: 90%;
+            color: #1576BD;
             text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .alert-box h1 {
-            color: #FF6600;
-            margin-bottom: 10px;
-        }
-        .alert-box p {
-            font-size: 18px;
-        }
-        .alert-box button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #FF6600;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .alert-box button:hover {
-            background-color: #FF6600;
         }
 
-        #fones{
-            width: 500px;
-            border-radius: 15px;
+        .container {
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1576BD;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-top: 0;
+            color: #333;
+        }
+
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            color: #1576BD;
         }
     </style>
 </head>
 <body>
-    <div class="alert-box">
-        <h1>Alerta!</h1>
-        <p>Utilize fones de ouvido para consumir qualquer mídia!</p>
-        <!--<img id="fones" src="/fones-de-ouvido-1280x720.jpg" alt="uma pessoa de fone">-->
-        <button onclick="window.close()">Entendi</button>
+    <div class="container">
+        <div class="icon">🎧</div>
+        <h1>Por favor, use fones de ouvido</h1>
+        <p>Para manter o ambiente confortável para todos,<br>áudios e vídeos só devem ser utilizados com fones.</p>
     </div>
 </body>
 </html>
